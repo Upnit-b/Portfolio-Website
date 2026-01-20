@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Nav from "./Nav";
 import { Button } from "./ui/button";
+import MobileNav from "./MobileNav";
 
 
 export default function Header() {
   return (
     <header className="py-8 xl:py-12 text-white">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center p-2">
         {/* logo */}
         <Link href="/">
           <h1 className="text-4xl font-semibold tracking-widest">Upnit<span className="text-primary">.</span></h1>
@@ -15,14 +16,14 @@ export default function Header() {
         {/* desktop nav & hire me button */}
         <div className="hidden md:flex items-center gap-8">
           <Nav />
-          <Link href="/">
-            <Button>Hire me</Button>
+          <Link href="/contact">
+            <Button className="cursor-pointer">Hire me</Button>
           </Link>
         </div>
 
         {/* mobile nav */}
         <div className="md:hidden">
-          mobile nav
+          <MobileNav />
         </div>
 
       </div>
