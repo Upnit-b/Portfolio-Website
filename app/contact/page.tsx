@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
+import { useRef, useState } from "react"
 
 const info = [
   {
@@ -26,6 +27,50 @@ const info = [
 ]
 
 export default function contact() {
+  const [service, setService] = useState<string | null>(null)
+  const [error, setError] = useState("")
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const formRef = useRef<HTMLFormElement | null>(null)
+
+  const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+
+    if (!service) {
+      setError("Please select a service")
+      return
+    }
+
+    setIsSubmitting(true)
+
+    const formData = new FormData(e.currentTarget)
+
+    const payload = {
+      firstName: formData.get("firstName"),
+      lastName: formData.get("lastName"),
+      email: formData.get("email"),
+      phone: formData.get("phone"),
+      service,
+      message: formData.get("message")
+    }
+
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type" : "application/json" },
+      body: JSON.stringify(payload)
+    })
+
+    setIsSubmitting(false)
+
+    if (res.ok) {
+      alert("Message sent successfully")
+      setService(null)
+      formRef.current?.reset()
+    } else {
+      alert("Something went wrong")
+    }
+  }
+
   return (
     <motion.section initial={{opacity: 0}} animate={{opacity: 1, transition: {
       delay: 1.2, duration: 0.2, ease: "easeIn"
@@ -36,29 +81,34 @@ export default function contact() {
         <div className="flex flex-col lg:flex-row gap-7.5">
           {/* form */}
           <div className="lg:w-[54%] order-2 lg:order-0">
-            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+            <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-primary">Let's work together</h3>
               <p className="text-white/60">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sit modi delectus architecto cupiditate temporibus.
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="text" placeholder="First Name" className="flex h-12 rounded-md border border-white/10
+                <Input type="text" name="firstName" required placeholder="First Name" className="flex h-12 rounded-md border border-white/10
                   focus:border-[#00ff99] font-light bg-black/60 px-4 py-5 text-base placeholder:text-white/60
                   outline-none"
                 />
-                <Input type="text" placeholder="Last Name" className="flex h-12 rounded-md border border-white/10
+                <Input type="text" name="lastName" required placeholder="Last Name" className="flex h-12 rounded-md border border-white/10
                   focus:border-[#00ff99] font-light bg-black/60 px-4 py-5 text-base placeholder:text-white/60
                   outline-none"/>
-                <Input type="email" placeholder="Email address" className="flex h-12 rounded-md border border-white/10
+                <Input type="email" name="email" required placeholder="Email address" className="flex h-12 rounded-md border border-white/10
                   focus:border-[#00ff99] font-light bg-black/60 px-4 py-5 text-base placeholder:text-white/60
                   outline-none"/>
-                <Input type="phone" placeholder="Phone number" className="flex h-12 rounded-md border border-white/10
+                <Input type="phone" name="phone" required placeholder="Phone number" className="flex h-12 rounded-md border border-white/10
                   focus:border-[#00ff99] font-light bg-black/60 px-4 py-5 text-base placeholder:text-white/60
                   outline-none"/>
               </div>
               {/* select */}
-              <Select>
+              <Select value={service ?? ""}
+                onValueChange={(value) => {
+                  setService(value)
+                  setError("")
+                }}
+              >
                 <SelectTrigger className="flex h-12 w-full rounded-md border border-white/10
                   focus:border-[#00ff99] font-light bg-black/60 px-4 py-5 text-base placeholder:text-white/60
                   outline-none cursor-pointer"
@@ -74,13 +124,16 @@ export default function contact() {
                   </SelectGroup>
                 </SelectContent>
               </Select>
+              {error && <p className="text-red-500 text-sm">{error}</p>}
               {/* text area */}
-              <Textarea className="h-50 flex rounded-md border border-white/10
+              <Textarea required name="message" className="h-50 flex rounded-md border border-white/10
                 focus:border-[#00ff99] font-light bg-black/60 px-4 py-5 text-base placeholder:text-white/60
                 outline-none" placeholder="Type your message here"
               />
               {/* btn */}
-              <Button size="lg" className="max-w-40 rounded-2xl">Send message</Button>
+              <Button size="lg" type="submit" className="cursor-pointer max-w-40 rounded-2xl" disabled={isSubmitting}>
+                {isSubmitting ? "Sending" : "Send message"}
+              </Button>
             </form>
           </div>
 
