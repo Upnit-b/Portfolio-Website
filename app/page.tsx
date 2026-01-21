@@ -22,10 +22,13 @@ export default function Home() {
 
             {/* btn and socials */}
             <div className="flex flex-col lg:flex-row items-center gap-8">
-              <Button variant="outline" size="lg" className="flex uppercase items-center rounded-2xl text-primary gap-2
+              <Button asChild variant="outline" size="lg"
+                className="flex uppercase items-center rounded-2xl text-primary gap-2
                 hover:bg-primary hover:text-black transition-all duration-500 cursor-pointer">
-                <span>Download Resume</span>
-                <FiDownload className="text-xl"/>
+                <a href="/resume/Upnit_Banga_Resume.pdf" download="Upnit_Banga_Resume.pdf">
+                  <span>Download Resume</span>
+                  <FiDownload className="text-xl"/>
+                </a>
               </Button>
               <div className="mb-8 lg:mb-0">
                 <Socials/>
