@@ -15,7 +15,7 @@ export default function Socials() {
     <div className="flex gap-6">
       {socials.map((item, index) => {
         return (
-          <Link key={index} href={item.path} className="w-9 h-9 border border-primary rounded-full
+          <Link key={index} target="_blank" href={item.path} className="w-9 h-9 border border-primary rounded-full
             flex justify-center items-center text-primary text-base hover:bg-primary hover:text-black
             hover:transition-all duration-500">
             {item.icon}
