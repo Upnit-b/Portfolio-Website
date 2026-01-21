@@ -14,7 +14,7 @@ export default function Header() {
         </Link>
 
         {/* desktop nav & hire me button */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           <Nav />
           <Link href="/contact">
             <Button className="cursor-pointer">Hire me</Button>
@@ -22,7 +22,7 @@ export default function Header() {
         </div>
 
         {/* mobile nav */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <MobileNav />
         </div>
 

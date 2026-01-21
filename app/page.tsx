@@ -1,10 +1,45 @@
+import Photo from "@/components/Photo";
+import Socials from "@/components/Socials";
+import Stats from "@/components/Stats";
+import { Button } from "@/components/ui/button";
+import { FiDownload } from "react-icons/fi"
 
 export default function Home() {
   return (
-   <main>
-    <div>
-      <h1>Hello, Portfolio</h1>
-    </div>
-   </main>
+   <section className="h-full">
+      <div className="container mx-auto p-2 h-full">
+        <div className="flex flex-col lg:flex-row items-center justify-between lg:pt-8 lg:pb-24">
+          {/* text */}
+          <div className="text-center lg:text-left order-2 lg:order-0">
+            <span className="text-xl">Software Developer</span>
+            <h1 className="h1 mb-6">
+              Hello I'm<br/> <span className="text-primary">Upnit Banga</span>
+            </h1>
+            <p className="max-w-125 mb-9 text-white/80">
+              I excel at crafting elegant digital solutions and I am proficient in various programming
+              languages and technologies.
+            </p>
+
+            {/* btn and socials */}
+            <div className="flex flex-col lg:flex-row items-center gap-8">
+              <Button variant="outline" size="lg" className="flex uppercase items-center rounded-2xl text-primary gap-2
+                hover:bg-primary hover:text-black transition-all duration-500 cursor-pointer">
+                <span>Download Resume</span>
+                <FiDownload className="text-xl"/>
+              </Button>
+              <div className="mb-8 lg:mb-0">
+                <Socials/>
+              </div>
+            </div>
+          </div>
+
+          {/* photo */}
+          <div className="order-1 lg:order-0 mb-8 lg:mb-0">
+            <Photo/>
+          </div>
+        </div>
+      </div>
+      <Stats/>
+   </section>
   );
 }

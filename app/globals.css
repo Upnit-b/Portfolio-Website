@@ -120,4 +120,13 @@
   body {
     @apply bg-background text-foreground;
   }
+  .h1 {
+    @apply text-[48px] md:text-[70px] leading-[1.1] font-semibold
+  }
+  .h2 {
+    @apply text-[36px] md:text-[48px] leading-[1.1] font-semibold
+  }
+  .h3 {
+    @apply text-[20px] md:text-[24px] leading-[1.1] font-semibold
+  }
 }
