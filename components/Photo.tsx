@@ -18,7 +18,7 @@ export default function Photo() {
           opacity: 1,
           transition: {delay:1.2, duration: 0.2, ease: "easeInOut"}
           }}
-        className="w-75 h-75 lg:w-125 lg:h-125 mix-blend-difference absolute">
+        className="w-75 h-75 lg:w-115 lg:h-115 mix-blend-difference absolute">
           <Image src="/my-image.png" priority quality={100} fill alt="Upnit Image" className="object-contain" />
         </motion.div>
 
