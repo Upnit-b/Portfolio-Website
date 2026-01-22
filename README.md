@@ -41,7 +41,7 @@ Includes animated page transitions, a projects slider, resume/experience tabs, a
 
 1. **Clone the repo**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/Upnit-b/portfolio.git
    cd upnit-portfolio
    ```
 
@@ -72,13 +72,9 @@ Open `http://localhost:3000`
 The contact form submits to a Next.js route handler:
 
 - **Endpoint:** `POST /api/contact`
-- **File:** `app/api/contact/route.ts` (or equivalent in your structure)
+- **File:** `app/api/contact/route.ts`
 
 It validates required fields and then sends an email using Resend.
-
-### Notes
-- In the current implementation, the email is sent **to**: `upnit.singh@gmail.com`
-- The “from” address is set to `Contact Form <onboarding@resend.dev>` (you can replace this with a verified sender/domain in Resend)
 
 ---
 
@@ -103,9 +99,7 @@ npm run start
 
 ---
 
-## 📁 Project Structure (Typical)
-
-> Your exact structure may differ, but this is the common layout for this codebase.
+## 📁 Project Structure
 
 ```txt
 portfolio/
