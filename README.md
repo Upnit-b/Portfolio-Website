@@ -41,7 +41,7 @@ Includes animated page transitions, a projects slider, resume/experience tabs, a
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/Upnit-b/portfolio.git
+   git clone https://github.com/Upnit-b/Portfolio-Website.git
    cd upnit-portfolio
    ```
 
@@ -137,3 +137,12 @@ portfolio/
 ```
 
 ---
+
+## 📬 Contact
+
+Built by [@Upnit-b](https://github.com/Upnit-b) — feel free to reach out via GitHub Issues for any suggestions or bugs.
+
+---
+
+
+⭐ **Star this repository if you found it helpful!**
