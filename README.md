@@ -3,7 +3,7 @@
 A modern, minimal, and fully responsive developer portfolio built with **Next.js**, **Tailwind CSS**, **Framer Motion**, and **shadcn/ui**.
 Includes animated page transitions, a projects slider, resume/experience tabs, and a production-ready **contact form** that sends emails via **Resend**.
 
-> Live Demo: **(add your deployed URL here)**
+> Live Demo: **https://upnit-portfolio.vercel.app/**
 
 ---
 
