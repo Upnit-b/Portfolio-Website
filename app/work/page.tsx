@@ -15,25 +15,25 @@ import WorkSliderBtns from "@/components/WorkSliderBtns"
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "project 1",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ab, accusamus ratione aliquam ex fugiat?",
-    stack: [{name: "Next.js"}, {name: "Tailwind.css"}, {name: "Node.js"},],
+    category: "full-stack",
+    title: "Publishing Platform",
+    description: "A production-grade publishing platform built with Next.js and Node.js, featuring a Medium-style editor, SEO-optimized content delivery, secure payments, and a Dockerized AWS deployment.",
+    stack: [{name: "Next.js"}, {name: "Tailwind.css"}, {name: "Node.js"}, {name: "Express.js"},],
     image: "/thumb1.jpg",
-    live: "",
-    github: ""
+    live: "https://editor.swagger.io",
+    github: "https://github.com/Upnit-b/Publishing-Platform-Architecture"
   },
-   {
+  {
     num: "02",
-    category: "fullstack",
-    title: "project 2",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ab, accusamus ratione aliquam ex fugiat?",
-    stack: [{name: "Html 5"}, {name: "Css 3"}, {name: "Javascript"},],
+    category: "backend",
+    title: "Micro-services",
+    description: "A scalable, event-driven microservices backend for a social media platform built with Node.js microservices architecture, featuring real-time communication between services, media handling using multer and cloudinary, and advanced search capabilities.",
+    stack: [{name: "Node.js"}, {name: "Express.js"}, {name: "Redis"}, {name: "RabbitMQ"},],
     image: "/thumb2.jpg",
     live: "",
-    github: ""
+    github: "https://github.com/Upnit-b/MicroServices-Backend"
   },
-   {
+  {
     num: "03",
     category: "frontend",
     title: "project 1",
@@ -72,10 +72,15 @@ export default function work() {
                 {project.num}
               </div>
 
+              {/* project title */}
+              <h4 className="text-[42px] font-bold leading-none text-white group-hover:text-primary transition-all duration-500 capitalize">
+                {project.title}
+              </h4>
+
               {/* project category */}
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-primary transition-all duration-500 capitalize">
+              <h4 className="text-[20px] font-bold leading-none text-white group-hover:text-primary transition-all duration-500 capitalize">
                 {project.category} project
-              </h2>
+              </h4>
 
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
