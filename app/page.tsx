@@ -11,13 +11,12 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row items-center justify-between lg:pt-8 lg:pb-24">
           {/* text */}
           <div className="text-center lg:text-left order-2 lg:order-0">
-            <span className="text-xl">Software Developer</span>
+            <span className="text-xl">Software Developer | Solutions Engineer</span>
             <h1 className="h1 mb-6">
               Hello I'm<br/> <span className="text-primary">Upnit Banga</span>
             </h1>
             <p className="max-w-125 mb-9 text-white/80">
-              I excel at crafting elegant digital solutions and I am proficient in various programming
-              languages and technologies.
+              With 12 years of experience in solution engineering, API integration and software development, I excel at building, deploying and integrating software projects
             </p>
 
             {/* btn and socials */}

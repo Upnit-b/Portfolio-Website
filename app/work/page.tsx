@@ -20,7 +20,7 @@ const projects = [
     description: "A production-grade publishing platform built with Next.js and Node.js, featuring a Medium-style editor, SEO-optimized content delivery, secure payments, and a Dockerized AWS deployment.",
     stack: [{name: "Next.js"}, {name: "Tailwind.css"}, {name: "Node.js"}, {name: "Express.js"},],
     image: "/thumb1.jpg",
-    live: "https://editor.swagger.io",
+    live: "https://www.underthewraps.com",
     github: "https://github.com/Upnit-b/Publishing-Platform-Architecture"
   },
   {
@@ -30,19 +30,70 @@ const projects = [
     description: "A scalable, event-driven microservices backend for a social media platform built with Node.js microservices architecture, featuring real-time communication between services, media handling using multer and cloudinary, and advanced search capabilities.",
     stack: [{name: "Node.js"}, {name: "Express.js"}, {name: "Redis"}, {name: "RabbitMQ"},],
     image: "/thumb2.jpg",
-    live: "",
+    live: "https://upnit-b.github.io/MicroServices-Backend/",
     github: "https://github.com/Upnit-b/MicroServices-Backend"
   },
   {
     num: "03",
-    category: "frontend",
-    title: "project 1",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ab, accusamus ratione aliquam ex fugiat?",
-    stack: [{name: "Html 5"}, {name: "Css 3"}, {name: "Javascript"},],
+    category: "full-stack",
+    title: "E-Commerce Platform",
+    description: "A production-ready e-commerce platform built with Django, supporting full product management, shopping cart, secure checkout using the PayPal REST API, user accounts, email verification, and a powerful admin dashboard.",
+    stack: [{name: "Django"}, {name: "BootStrap"}, {name: "Javascript"},],
     image: "/thumb3.jpg",
-    live: "",
-    github: ""
+    live: "https://vicarious-janeva-upnit-dba8c911.koyeb.app/",
+    github: "https://github.com/Upnit-b/E-Commerce-Platform-Template"
   },
+  {
+    num: "04",
+    category: "full-stack",
+    title: "AI Recipe Generator",
+    description: "Turn the ingredients you already have into a delicious recipe — powered by Anthropic’s Claude AI and built with Next.js. A production-ready, server-secure AI web application built with Next.js & Claude",
+    stack: [{name: "Next.js"}, {name: "Tailwind.css"}, {name: "Node.js"}, {name: "Anthropic AI API"},],
+    image: "/thumb4.jpg",
+    live: "https://ai-recipe-generator-claude-api.vercel.app/",
+    github: "https://github.com/Upnit-b/AI-Recipe-Generator-Claude-API"
+  },
+  {
+    num: "05",
+    category: "full-stack",
+    title: "Video Streaming Platform",
+    description: "A Netflix-inspired movie streaming web application built with Django, featuring user authentication, movie browsing by genre, watch-list functionality, and video streaming.",
+    stack: [{name: "Django"}, {name: "Css 3"}, {name: "Neon"},],
+    image: "/thumb5.jpg",
+    live: "https://video-streaming-platform-eh00.onrender.com/",
+    github: "https://github.com/Upnit-b/Video-Streaming-Platform"
+  },
+  {
+    num: "06",
+    category: "front-end",
+    title: "Shopping Platform",
+    description: "A clean, multi‑page shopping platform built using HTML, CSS, and JavaScript, simulating a real‑world e‑commerce flow such as browsing products, checkout, order history, and shipment tracking.",
+    stack: [{name: "Javascript"}, {name: "Css 3"}, {name: "HTML 5"},],
+    image: "/thumb6.jpg",
+    live: "https://upnit-b.github.io/Shopping-Platform-Template/",
+    github: "https://github.com/Upnit-b/Shopping-Platform-Template"
+  },
+  {
+    num: "07",
+    category: "front-end",
+    title: "Youtube Clone",
+    description: "A static front‑end clone of YouTube's interface built using pure HTML and CSS.",
+    stack: [{name: "Css 3"}, {name: "HTML 5"},],
+    image: "/thumb7.jpg",
+    live: "https://upnit-b.github.io/Youtube-Clone/",
+    github: "https://github.com/Upnit-b/Youtube-Clone"
+  },
+  {
+    num: "08",
+    category: "front-end",
+    title: "SaaS Webpage",
+    description: "A clean, responsive, and modern SaaS landing page built using HTML, CSS, and JavaScript. This project is designed to showcase a SaaS product with a professional UI, smooth interactions, and a scalable structure suitable for real-world deployment.",
+    stack: [{name: "Javascript"}, {name: "Css 3"}, {name: "HTML 5"},],
+    image: "/thumb8.jpg",
+    live: "https://upnit-b.github.io/SaaS-Webpage/",
+    github: "https://github.com/Upnit-b/SaaS-Webpage"
+  },
+
 ]
 
 
