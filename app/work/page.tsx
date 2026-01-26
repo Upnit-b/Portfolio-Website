@@ -159,7 +159,7 @@ export default function work() {
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-17.5 h-17.5 rounded-full bg-white/5
-                        flex justify-center items-center group cursor-pointer"
+                        flex justify-center items-center group cursor-pointer hover:rotate-45 transition-all duration-500"
                       >
                         <BsArrowUpRight className="text-white text-3xl group-hover:text-primary"/>
                       </TooltipTrigger>

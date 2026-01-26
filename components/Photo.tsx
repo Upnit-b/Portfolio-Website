@@ -23,8 +23,8 @@ export default function Photo() {
         </motion.div>
 
         {/* circle */}
-        <motion.svg className="w-75 lg:w-126.5 h-75 lg:h-126.5" fill="transparent"
-          viewBox="0 0 495 495"
+        <motion.svg className="w-75 lg:w-120 h-75 lg:h-120" fill="transparent"
+          viewBox="0 0 510 510"
           xmlns="http://www.w3.org/2000/svg">
           <motion.circle cx="253" cy="253" r="250" stroke="#00ff99" strokeWidth="4"
             strokeLinecap="round"

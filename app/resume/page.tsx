@@ -1,7 +1,7 @@
 "use client"
 
-import {FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs} from "react-icons/fa"
-import {SiTailwindcss, SiNextdotjs} from "react-icons/si"
+import {FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaPython} from "react-icons/fa"
+import {SiTailwindcss, SiNextdotjs, SiTypescript, SiCplusplus, SiNestjs, SiExpress, SiDjango, SiFastapi, SiPostgresql, SiMongodb, SiSqlite, SiMysql, SiRedis} from "react-icons/si"
 import { motion } from "framer-motion"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ScrollArea } from "@/components/ui/scroll-area"
@@ -10,7 +10,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 // about data
 const about = {
   title: "About me",
-  description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem culpa nam vitae dolorem saepe cum, at molestiae.',
+  description: 'Software Engineer with hands-on experience delivering production-ready web applications for clients. Strong backend and frontend focus with Node.js, Django, PostgreSQL, distributed systems, Next.js, TailwindCSS, combined with 10+ years of Solutions and Integration Engineering experience. Proven ability to design, build, deploy and document scalable systems with payments, messaging, and cloud infrastructure.',
   info: [
     {
       fieldName: "Name",
@@ -47,37 +47,37 @@ const about = {
 const experience = {
   icon: "/file.svg",
   title: "My experience",
-  description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem culpa nam vitae dolorem saepe cum, at molestiae.",
+  description: "Software / Solutions Engineer with hands-on experience delivering production-ready web applications for clients. Strong backend and frontend focus with Node.js, Django, PostgreSQL, distributed systems, Next.js, TailwindCSS, combined with 10+ years of Solutions and Integration Engineering experience. Proven ability to design, build, deploy and document scalable systems with payments, messaging, and cloud infrastructure.",
   items: [
     {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
+      company: "Self Employed",
+      position: "Software Developer",
+      duration: "Dec 2023 - Present",
     },
     {
-      company: "Web Design Studio",
-      position: "Front-End Developer",
-      duration: "Summer 2021",
+      company: "Appcast",
+      position: "Enterprise Account Executive",
+      duration: "Oct 2022 - Jul 2023",
     },
     {
-      company: "E-Commerce Startup",
-      position: "Freelance Web Developer",
-      duration: "2020 - 2021",
+      company: "Teltonika",
+      position: "Senior Solutions Engineer",
+      duration: "Aug 2020 - Oct 2022",
     },
     {
-      company: "Tech Academy",
-      position: "Teaching Assistant",
-      duration: "2019 - 2020",
+      company: "Teltonika",
+      position: "Solutions Engineer",
+      duration: "Aug 2019 - Aug 2020",
     },
     {
-      company: "Digital Agency",
-      position: "UI/UX Designer",
-      duration: "2018 - 2019",
+      company: "Rays Power Infra",
+      position: "Senior Sales Engineer",
+      duration: "Jun 2016 - Jan 2019",
     },
     {
-      company: "Software Development Firm",
-      position: "Junior Developer",
-      duration: "2017 - 2018",
+      company: "Rays Power Infra",
+      position: "Technical Account Manager",
+      duration: "Apr 2013 - Jun 2016",
     },
   ]
 }
@@ -86,27 +86,22 @@ const experience = {
 const education = {
   icon: "/file.svg",
   title: "My education",
-  description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem culpa nam vitae dolorem saepe cum, at molestiae.",
+  description: "Pursued Bachelor of Science in Electronics with MBA and Computer Science 50 from Harvard University",
   items: [
     {
-      institution: "Online Course Platform",
-      degree: "Full Stack Web Development Bootcamp",
-      duration: "2023",
+      institution: "Harvard University",
+      degree: "CS50 Bootcamp",
+      duration: "Aug 2023 - Nov 2023",
     },
     {
-      institution: "Codeacademy",
-      degree: "Front-End Track",
-      duration: "2022",
+      institution: "University of Petroleum and Energy Studies",
+      degree: "MBA",
+      duration: "Aug 2011 - May 2013",
     },
     {
-      institution: "Online Course",
-      degree: "Programming Course",
-      duration: "2020 - 2021",
-    },
-    {
-      institution: "Tech Institute",
-      degree: "Certified Web Developer",
-      duration: "2019",
+      institution: "Delhi University",
+      degree: "Bachelor of Science - Electronics",
+      duration: "Aug 2007 - May 2010",
     },
   ]
 }
@@ -114,7 +109,7 @@ const education = {
 //skills data
 const skills = {
   title: "My skills",
-  description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem culpa nam vitae dolorem saepe cum, at molestiae.",
+  description: "Well versed in API integrations, system design, system architecture, web development and software development",
   skillList: [
     {
       icon: <FaHtml5/>,
@@ -129,6 +124,18 @@ const skills = {
       name: "javascript",
     },
     {
+      icon: <FaPython/>,
+      name: "python",
+    },
+    {
+      icon: <SiTypescript/>,
+      name: "typescript",
+    },
+    {
+      icon: <SiCplusplus/>,
+      name: "c++",
+    },
+    {
       icon: <FaReact/>,
       name: "react.js",
     },
@@ -137,16 +144,52 @@ const skills = {
       name: "next.js",
     },
     {
-      icon: <SiTailwindcss/>,
-      name: "tailwind.css",
+      icon: <SiNestjs/>,
+      name: "nest.js",
     },
     {
       icon: <FaNodeJs/>,
       name: "node.js",
     },
     {
+      icon: <SiExpress/>,
+      name: "express.js",
+    },
+    {
+      icon: <SiDjango/>,
+      name: "django",
+    },
+    {
+      icon: <SiFastapi/>,
+      name: "fast API",
+    },
+    {
+      icon: <SiTailwindcss/>,
+      name: "tailwind.css",
+    },
+    {
       icon: <FaFigma/>,
       name: "figma",
+    },
+    {
+      icon: <SiPostgresql/>,
+      name: "postgreSQL",
+    },
+    {
+      icon: <SiMongodb/>,
+      name: "mongoDB",
+    },
+    {
+      icon: <SiSqlite/>,
+      name: "sqlite",
+    },
+    {
+      icon: <SiMysql/>,
+      name: "mysql",
+    },
+    {
+      icon: <SiRedis/>,
+      name: "Redis",
     },
   ]
 }
@@ -269,7 +312,7 @@ export default function resume() {
               <div className="flex flex-col gap-7.5">
                 <div className="flex flex-col gap-7.5 text-center lg:text-left">
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
-                  <p className="max-w-150 text-white/60 mx-auto lg:mx-0">{skills.description}</p>
+                  <p className="max-w-full text-white/60 mx-auto lg:mx-0">{skills.description}</p>
                 </div>
                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:gap-7.5 gap-4">
                   {skills.skillList.map((skill, index) => {
@@ -298,7 +341,7 @@ export default function resume() {
             <TabsContent value="about" className="w-full text-center lg:text-left">
               <div className="flex flex-col gap-7.5">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-150 text-white/60 mx-auto lg:mx-0">{about.description}</p>
+                <p className="max-w-full text-white/60 mx-auto lg:mx-0">{about.description}</p>
                 <ul className="grid grid-cols-1 lg:grid-cols-2 gap-y-6 max-w-155 mx-auto lg:mx-0">
                   {about.info.map((item, index) => {
                     return (

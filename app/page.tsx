@@ -10,9 +10,9 @@ export default function Home() {
       <div className="container mx-auto p-2 h-full">
         <div className="flex flex-col lg:flex-row items-center justify-between lg:pt-8 lg:pb-24">
           {/* text */}
-          <div className="text-center lg:text-left order-2 lg:order-0">
+          <div className="text-center lg:text-left order-2 lg:order-0 ">
             <span className="text-xl">Software Developer | Solutions Engineer</span>
-            <h1 className="h1 mb-6">
+            <h1 className="h1 mb-10 mt-5">
               Hello I'm<br/> <span className="text-primary">Upnit Banga</span>
             </h1>
             <p className="max-w-125 mb-9 text-white/80">
@@ -36,7 +36,7 @@ export default function Home() {
           </div>
 
           {/* photo */}
-          <div className="order-1 lg:order-0 mb-8 lg:mb-0">
+          <div className="order-1 lg:order-0 mb-8">
             <Photo/>
           </div>
         </div>
