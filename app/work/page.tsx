@@ -53,6 +53,16 @@ const projects = [
     live: "https://ai-recipe-generator-claude-api.vercel.app/",
     github: "https://github.com/Upnit-b/AI-Recipe-Generator-Claude-API"
   },
+  {
+    num: "05",
+    category: "full-stack",
+    title: "AI Content Generator",
+    description: "A Django web app that turns a single topic into a complete content pack—a long-form blog post plus SEO copy and social posts—then lets you save and manage generated posts in your account.",
+    stack: [{name: "Django"}, {name: "OpenAI API"},],
+    image: "/thumb5.jpeg",
+    live: "https://ai-content-generator-l5eu.onrender.com/",
+    github: "https://github.com/Upnit-b/AI-Content-Generator"
+  },
 ]
 
 
@@ -162,7 +172,7 @@ export default function work() {
 
                       {/* image */}
                       <div className="relative w-full h-full">
-                        <Image src={project.image} fill className="object-cover" alt={project.title}/>
+                        <Image src={project.image} fill className="object-cover" alt={project.title} quality={100}/>
                       </div>
                     </div>
                   </SwiperSlide>
