@@ -4,9 +4,12 @@ import "./globals.css";
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
+import Footer from "@/components/Footer";
 
-const JetBrainsMono = JetBrains_Mono({ subsets: ["latin"], weight: ["100", "200", "300", "400", "500",
-  "600", "700", "800"], variable: '--font-jetBrainsMono'})
+const JetBrainsMono = JetBrains_Mono({
+  subsets: ["latin"], weight: ["100", "200", "300", "400", "500",
+    "600", "700", "800"], variable: '--font-jetBrainsMono'
+})
 
 export const metadata: Metadata = {
   title: "Upnit's Portfolio",
@@ -20,15 +23,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={JetBrainsMono.className}
-      >
-        <Header/>
-        <StairTransition/>
-        <PageTransition>
-          {children}
-        </PageTransition>
-
+      <body className={`${JetBrainsMono.className} min-h-screen flex flex-col bg-background text-foreground`}>
+        <Header />
+        <StairTransition />
+        <main className="flex-1 flex flex-col">
+          <PageTransition>
+            {children}
+          </PageTransition>
+        </main>
+        <Footer />
       </body>
     </html>
   );
