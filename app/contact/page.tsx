@@ -84,7 +84,8 @@ export default function contact() {
             <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-primary">Let's work together</h3>
               <p className="text-white/60">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sit modi delectus architecto cupiditate temporibus.
+                Have a project in mind or looking for someone to help build, improve, or integrate your system?
+  I’m always open to discussing new ideas, freelance work, or full-time opportunities.
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -118,9 +119,10 @@ export default function contact() {
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="est" className="cursor-pointer focus:bg-[#00ff99]">Web Development</SelectItem>
-                    <SelectItem value="cst" className="cursor-pointer focus:bg-[#00ff99]">UI/UX Design</SelectItem>
-                    <SelectItem value="mst" className="cursor-pointer focus:bg-[#00ff99]">Logo Design</SelectItem>
+                    <SelectItem value="full-stack-development" className="cursor-pointer focus:bg-[#00ff99]">Full Stack Development</SelectItem>
+                    <SelectItem value="backend-development" className="cursor-pointer focus:bg-[#00ff99]">Backend Development</SelectItem>
+                    <SelectItem value="frontend-development" className="cursor-pointer focus:bg-[#00ff99]">Frontend Development</SelectItem>
+                    <SelectItem value="api-integration" className="cursor-pointer focus:bg-[#00ff99]">API Integration</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>

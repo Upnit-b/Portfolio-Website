@@ -53,47 +53,6 @@ const projects = [
     live: "https://ai-recipe-generator-claude-api.vercel.app/",
     github: "https://github.com/Upnit-b/AI-Recipe-Generator-Claude-API"
   },
-  {
-    num: "05",
-    category: "full-stack",
-    title: "Video Streaming Platform",
-    description: "A Netflix-inspired movie streaming web application built with Django, featuring user authentication, movie browsing by genre, watch-list functionality, and video streaming.",
-    stack: [{name: "Django"}, {name: "Css 3"}, {name: "Neon"},],
-    image: "/thumb5.jpg",
-    live: "https://video-streaming-platform-eh00.onrender.com/",
-    github: "https://github.com/Upnit-b/Video-Streaming-Platform"
-  },
-  {
-    num: "06",
-    category: "front-end",
-    title: "Shopping Platform",
-    description: "A clean, multi‑page shopping platform built using HTML, CSS, and JavaScript, simulating a real‑world e‑commerce flow such as browsing products, checkout, order history, and shipment tracking.",
-    stack: [{name: "Javascript"}, {name: "Css 3"}, {name: "HTML 5"},],
-    image: "/thumb6.jpg",
-    live: "https://upnit-b.github.io/Shopping-Platform-Template/",
-    github: "https://github.com/Upnit-b/Shopping-Platform-Template"
-  },
-  {
-    num: "07",
-    category: "front-end",
-    title: "Youtube Clone",
-    description: "A static front‑end clone of YouTube's interface built using pure HTML and CSS.",
-    stack: [{name: "Css 3"}, {name: "HTML 5"},],
-    image: "/thumb7.jpg",
-    live: "https://upnit-b.github.io/Youtube-Clone/",
-    github: "https://github.com/Upnit-b/Youtube-Clone"
-  },
-  {
-    num: "08",
-    category: "front-end",
-    title: "SaaS Webpage",
-    description: "A clean, responsive, and modern SaaS landing page built using HTML, CSS, and JavaScript. This project is designed to showcase a SaaS product with a professional UI, smooth interactions, and a scalable structure suitable for real-world deployment.",
-    stack: [{name: "Javascript"}, {name: "Css 3"}, {name: "HTML 5"},],
-    image: "/thumb8.jpg",
-    live: "https://upnit-b.github.io/SaaS-Webpage/",
-    github: "https://github.com/Upnit-b/SaaS-Webpage"
-  },
-
 ]
 
 

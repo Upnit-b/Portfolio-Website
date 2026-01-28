@@ -7,27 +7,27 @@ import { motion } from "framer-motion"
 const service = [
   {
     num: '01',
-    title: "Web Development",
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod ipsa soluta hic facere tempore totam ea.',
-    href: ''
+    title: "Full Stack Development",
+    description: 'Design and build complete web applications from idea to production. I work across frontend, backend, databases, and cloud infrastructure to deliver scalable, secure, and high-performance products.',
+    href: '/contact'
   },
   {
     num: '02',
-    title: "UI/UX Design",
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod ipsa soluta hic facere tempore totam ea.',
-    href: ''
+    title: "Backend Development",
+    description: 'Develop robust backend systems using Node.js, Django, or FastAPI. Focused on performance, clean architecture, database design, authentication, background jobs, and scalable APIs.',
+    href: '/contact'
   },
   {
     num: '03',
-    title: "Logo Design",
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod ipsa soluta hic facere tempore totam ea.',
-    href: ''
+    title: "Frontend Development",
+    description: 'Build modern, responsive user interfaces using React, Next.js, Tailwind CSS. Emphasis on usability, performance, accessibility, and seamless user experience.',
+    href: '/contact'
   },
   {
     num: '04',
-    title: "SEO",
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod ipsa soluta hic facere tempore totam ea.',
-    href: ''
+    title: "API Integration",
+    description: 'Integrate third-party APIs and internal services reliably. Experienced with REST, webhooks, authentication flows, error handling, data transformation, and system-to-system communication.',
+    href: '/contact'
   },
 ]
 
@@ -43,7 +43,7 @@ export default function services() {
 
             {service.map((serv, index) => {
               return (
-                <div key={index} className="flex-1 flex flex-col justify-center gap-6 group">
+                <div key={index} className="flex flex-col justify-center gap-6 group">
                   {/* top */}
                   <div className="w-full flex justify-between items-center">
                     <div className="text-5xl font-extrabold text-outline text-transparent
@@ -67,7 +67,7 @@ export default function services() {
                   <p className="text-white/60">{serv.description}</p>
 
                   {/* border */}
-                  <div className="border-b border-white/20 w-full"></div>
+                  <div className="border-b border-white/20 w-full h-full"></div>
                 </div>
               )
             })}
