@@ -19,7 +19,7 @@ const projects = [
     title: "Publishing Platform",
     description: "A production-grade publishing platform built with Next.js and Node.js, featuring a Medium-style editor, SEO-optimized content delivery, secure payments, and a Dockerized AWS deployment.",
     stack: [{name: "Next.js"}, {name: "Tailwind.css"}, {name: "Node.js"}, {name: "Express.js"},],
-    image: "/thumb1.jpg",
+    image: "/thumb1.png",
     live: "https://www.underthewraps.com",
     github: "https://github.com/Upnit-b/Publishing-Platform-Architecture"
   },
@@ -29,7 +29,7 @@ const projects = [
     title: "Micro-services",
     description: "A scalable, event-driven microservices backend for a social media platform built with Node.js microservices architecture, featuring real-time communication between services, media handling using multer and cloudinary, and advanced search capabilities.",
     stack: [{name: "Node.js"}, {name: "Express.js"}, {name: "Redis"}, {name: "RabbitMQ"},],
-    image: "/thumb2.jpg",
+    image: "/thumb2.png",
     live: "https://upnit-b.github.io/MicroServices-Backend/",
     github: "https://github.com/Upnit-b/MicroServices-Backend"
   },
@@ -39,7 +39,7 @@ const projects = [
     title: "E-Commerce Platform",
     description: "A production-ready e-commerce platform built with Django, supporting full product management, shopping cart, secure checkout using the PayPal REST API, user accounts, email verification, and a powerful admin dashboard.",
     stack: [{name: "Django"}, {name: "BootStrap"}, {name: "Javascript"},],
-    image: "/thumb3.jpg",
+    image: "/thumb3.png",
     live: "https://vicarious-janeva-upnit-dba8c911.koyeb.app/",
     github: "https://github.com/Upnit-b/E-Commerce-Platform-Template"
   },
@@ -49,7 +49,7 @@ const projects = [
     title: "AI Recipe Generator",
     description: "Turn the ingredients you already have into a delicious recipe — powered by Anthropic’s Claude AI and built with Next.js. A production-ready, server-secure AI web application built with Next.js & Claude",
     stack: [{name: "Next.js"}, {name: "Tailwind.css"}, {name: "Node.js"}, {name: "Anthropic AI API"},],
-    image: "/thumb4.jpg",
+    image: "/thumb4.png",
     live: "https://ai-recipe-generator-claude-api.vercel.app/",
     github: "https://github.com/Upnit-b/AI-Recipe-Generator-Claude-API"
   },
