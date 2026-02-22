@@ -40,7 +40,7 @@ const projects = [
     description: "A production-ready e-commerce platform built with Django, supporting full product management, shopping cart, secure checkout using the PayPal REST API, user accounts, email verification, and a powerful admin dashboard.",
     stack: [{name: "Django"}, {name: "BootStrap"}, {name: "Javascript"},],
     image: "/thumb3.png",
-    live: "https://vicarious-janeva-upnit-dba8c911.koyeb.app/",
+    live: "https://extended-gisele-upnit-e30e494f.koyeb.app",
     github: "https://github.com/Upnit-b/E-Commerce-Platform-Template"
   },
   {
